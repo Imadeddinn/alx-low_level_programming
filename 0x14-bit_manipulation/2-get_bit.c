@@ -19,4 +19,3 @@ bit_value = (n >> index) & 1;
 
 return (bit_value);
 }
-
