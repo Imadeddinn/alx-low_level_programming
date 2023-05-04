@@ -2,10 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+size_t looped_listint_len(const listint_t *head);
+size_t print_listint_safe(const listint_t *head);
+
 /**
-* print_listint_safe - Safely prints a list of listint_t.
-* @head: A pointer to the head of the list.
-* Return: The number of nodes in the list.
+* looped_listint_len - Calculates the count of distinct nodes
+* in a circular linked list of listint_t.
+* @head: Pointer to the first node of the listint_t to be evaluated.
+* Return: If the list is not circular - 0.
+* Otherwise - the count of distinct nodes in the list.
 */
 
 size_t looped_listint_len(const listint_t *head)
