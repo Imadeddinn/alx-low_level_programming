@@ -1,7 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 
 char *create_buffer(char *file);
 void close_file(int fd);
@@ -55,6 +54,7 @@ exit(100);
 * If the destination file cannot be created or written to, exit with code 99.
 * If either the source or destination file can't be closed, exit with code 100.
 */
+
 int main(int argc, char *argv[])
 {
 int from, to, r, w;
